@@ -1,0 +1,39 @@
+body
+{
+   background-color: white;
+   font-family: Arial, sans-serif;
+   letter-spacing: 2px;
+   margin-left: 50px;
+}
+
+h1
+{
+    color: #ff9933;
+}
+
+h2
+{
+    color: #ff9933;
+    margin-top: -20px
+}
+
+h3
+{
+    text-align: center;
+    color: #5f5f5f;
+    font-size: 26px;
+    line-height: 1.6;
+}
+
+h4
+{
+   margin-top: -20px;
+}
+
+h5
+{
+    text-align: center;
+    color: purple;
+    font-size: 26px;
+    margin-top: -20px;
+}
