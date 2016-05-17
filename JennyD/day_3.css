@@ -1,0 +1,13 @@
+body
+{
+    background-color: rgb(1,6,66);
+}
+button 
+{
+    background-color: red;
+    color: white;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    border: red;
+    font-size: 24px;
+}
