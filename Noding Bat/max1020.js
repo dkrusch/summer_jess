@@ -5,11 +5,11 @@ var max1020=function(a, b)
 { 
   	if (a > b && a <= 20 && a >= 10)
     {
-      return a
+      return a;
     }
 	else if (b > a && b <= 20 && b >= 10)
     {
-      return b
+      return b;
     }
   	else 
     {

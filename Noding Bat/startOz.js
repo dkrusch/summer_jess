@@ -6,18 +6,18 @@ var startOz=function(str)
 { 
 	if (str[0] === "o" && str[1] === "z")
     {
-      return("oz")
+      return("oz");
     }
   	else if (str[0] !== "o" && str[1] === "z")
     {
-      return("z")
+      return("z");
     }
   	else if (str[0] === "o" && str [1] !== "z")
     {
-      return("o")
+      return("o");
     }
   	else
     {
-      return("")
+      return("");
     }
 }

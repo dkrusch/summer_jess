@@ -4,7 +4,7 @@ function changeColor(a,b,c)
     a = Math.floor((Math.random() * 255) + 0);
     b = Math.floor((Math.random() * 255) + 0);
     c = Math.floor((Math.random() * 255) + 0);
-    alert(a)
+    console.log(a)
     
-    document.getElementsByClassName('myclass').style.background = green;
+    document.body.style.backgroundColor = "rgb(" + a + "," + b + "," + c + ")";
 }
