@@ -1,4 +1,13 @@
-box1
+.grid
 {
-    background-color: red;
+    
+}
+.row
+{
+    height: 100px;
+}
+.box
+{
+    width: 40px;
+    border: 1px black solid;
 }

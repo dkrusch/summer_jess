@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">
+	    <title>Grid</title>
+	    <link rel="stylesheet" type="text/css" href="day_4.css">
+    </head>
 <body>
-    <canvas id="myCanvas" width="560" height="400" style="border:1px solid #d3d3d3;"> Your browser does not support the HTML5 canvas tag.
-    </canvas>
-
-        <script class="box1">
-            var a = document.getElementById("myCanvas");
-            var atx = a.getContext("2d");
-            atx.rect(20, 20, 150, 100);
-            atx.stroke();
-        </script>
+    <div class="grid">
+        <div class="palette" id="palette">
+            <div class="red box" id="red"></div>
+            <div class="yellow box" id="yellow"></div>
+            <div class="blue box" id="blue"></div>
+            <div class="white box" id="white"></div>
+        </div>
+        <div class="row" id="row">
+            <div class="box" id="box_1"></div>
+            <div class="box" id="box_2"></div>
+            <div class="box" id="box_3"></div>
+            <div class="box" id="box_4"></div>
+        </div>
+        
+    </div>
     
-        <script class="box2">
-            var b = document.getElementById("myCanvas");
-            var btx = b.getContext("2d");
-            btx.rect(20, 20, 150, 100);
-            btx.stroke();
-        </script>
-
-        <script class="box3">
-            var c = document.getElementById("myCanvas");
-            var ctx = c.getContext("2d");
-            ctx.rect(20, 20, 150, 100);
-            ctx.stroke();
-        </script>
+        <script src="day_4.js"></script>
 </body>
 </html>
