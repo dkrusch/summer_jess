@@ -2,12 +2,39 @@
 {
     
 }
+.palette
+{
+    height: 50px;
+    margin-bottom: 20px;
+}
+.palette .box
+{
+    width: 50px;
+}
+.red
+{
+    background-color: red;
+}
+.yellow
+{
+    background-color: yellow;
+}
+.blue
+{
+    background-color: blue;   
+}
+.white
+{
+    background-color: white;
+}
 .row
 {
     height: 100px;
 }
 .box
 {
-    width: 40px;
+    width: 100px;
     border: 1px black solid;
+    height: 100%;
+    display: inline-block;
 }
