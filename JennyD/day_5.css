@@ -4,8 +4,8 @@
 }
 
 .message {
-	padding: 30px 30px 30px 50px;
-	font-family: Monaco, Consolas, "Lucida Console", monospace;
+    padding-left: 30px;
+	font-family: monoca, monospace;
 	font-size: 28px;
 	color: #333;
 	width: 680px;
