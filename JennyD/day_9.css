@@ -1,0 +1,60 @@
+#container_main {
+  position: relative;
+}
+
+#content_wrap {
+  width: 900px;
+  min-height: 650px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+#container_left {
+  float: left;
+  width: 300px;
+}
+
+#container_right {
+  float: right;
+  width: 600px;
+}
+
+#replay {
+  display: none;
+}
+
+#ball_container {
+  ;
+}
+
+#ball {
+  height: 120px;
+  width: 120px;
+  background-color: red;
+  margin: 0 auto;
+  margin-top: 100px;
+  cursor: pointer;
+  border-radius: 50%;
+
+  animation: bounce 12s infinite;
+}
+  
+@keyframes bounce {
+0%   {margin-top: 10px; animation-timing-function: ease-in;}
+11%  {width: 120px;}
+12%  {margin-top: 500px; width: 135px; animation-timing-function: ease-out;}
+13%  {width: 120px;}
+25%  {margin-top: 20px; animation-timing-function: ease-in;}
+36%  {width: 120px;}
+37%  {margin-top: 500px; width: 135px; animation-timing-function: ease-out;}
+38%  {width: 120px;}
+49%  {margin-top: 30px; animation-timing-function: ease-in;}
+60%  {width: 120px;}
+61%  {margin-top: 500px; width: 135px; animation-timing-function: ease-out;}
+62%  {width: 120px;}
+75%  {margin-top: 20px; animation-timing-function: ease-in;}
+86%  {width: 120px;}
+87%  {margin-top: 500px; width: 135px; animation-timing-function: ease-out;}
+88%  {width: 120px;}
+100% {margin-top: 10px; animation-timing-function: ease-in;}
+}
