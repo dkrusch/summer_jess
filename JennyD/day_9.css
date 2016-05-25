@@ -23,6 +23,18 @@
   display: none;
 }
 
+#message_container {
+  display: none;
+  position: absolute;
+  left: 300px;
+  width: 600px;
+  height: 300px;
+  float: right;
+  
+  padding-top: 300px;
+  text-align: right;
+}
+
 #ball_container {
   ;
 }
