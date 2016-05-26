@@ -1,0 +1,80 @@
+#container_main {
+	position: relative;
+	height: 600px;
+	width: 900px;
+}
+
+.sushi_box {
+	position: absolute;
+	cursor: pointer;
+}
+
+#fancy_roll {
+	bottom: 0;
+	right: 20px;
+}
+
+#seaweed {
+	top: 50px;
+	left: 50px;
+}
+
+#roll1 {
+	top: 60px;
+	left: 720px;
+}
+
+#pinkfish {
+	top: 270px;
+	left: 50px;
+}
+
+#shrimp2 {
+	top: 200px;
+	left: 380px;
+}
+
+#eel2 {
+	top: 50px;
+	left: 350px;
+}
+
+#rolls {
+	top: 320px;
+	left: 380px;
+}
+
+#sake {
+	top: 230px;
+	left: 700px;
+}
+
+#masago {
+	bottom: 10px;
+	left: 50px;
+}
+
+#whitefish {
+	bottom: 10px;
+	left: 350px;
+}
+
+@keyframes bounce {
+0%   {margin-top: 10px; animation-timing-function: ease-in;}
+11%  {width: 120px;}
+12%  {margin-top: 500px; width: 135px; animation-timing-function: ease-out;}
+13%  {width: 120px;}
+25%  {margin-top: 20px; animation-timing-function: ease-in;}
+36%  {width: 120px;}
+37%  {margin-top: 500px; width: 135px; animation-timing-function: ease-out;}
+38%  {width: 120px;}
+49%  {margin-top: 30px; animation-timing-function: ease-in;}
+60%  {width: 120px;}
+61%  {margin-top: 500px; width: 135px; animation-timing-function: ease-out;}
+62%  {width: 120px;}
+75%  {margin-top: 20px; animation-timing-function: ease-in;}
+86%  {width: 120px;}
+87%  {margin-top: 500px; width: 135px; animation-timing-function: ease-out;}
+88%  {width: 120px;}
+100% {margin-top: 10px; animation-timing-function: ease-in;}
+}
