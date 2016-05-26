@@ -1,12 +1,11 @@
-var sushiArray = ["", "shake", "hop", "spin", "hooray"];
-var sushiValue = "";
+var sushiArray = ["shake", "hop", "spin", "hooray"];
 
 var animation = function(event)
 {
-    sushiValue = Math.floor((Math.random() * 4) + 1);
+    var sushiValue = Math.floor((Math.random() * 4) + 0);
+    event.srcElement.className = "sushi_box " + sushiArray[sushiValue];
     console.log(sushiValue);
     console.log(event.srcElement);
-    document.getElementsByClassName("sushi_box").innerHTML = "sushi_box "+ sushiArray[sushiValue];
     console.log(sushiArray[sushiValue]);
     //setTimeout(newLevel, 2000);
     
