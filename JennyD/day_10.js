@@ -1,14 +1,9 @@
-var sushiArray = ["shake", "hop", "spin", "hooray"];
+var sushiArray = ["shake", "hop", "spin", "hooray", "grow"];
 
 var animation = function(event)
 {
-    var sushiValue = Math.floor((Math.random() * 4) + 0);
+    var sushiValue = Math.floor(Math.random() * sushiArray.length);
     event.srcElement.className = "sushi_box " + sushiArray[sushiValue];
-    console.log(sushiValue);
-    console.log(event.srcElement);
-    console.log(sushiArray[sushiValue]);
-    //setTimeout(newLevel, 2000);
-    
 };
 
 window.onload = function() 
@@ -19,5 +14,4 @@ window.onload = function()
         sushi[i].addEventListener("click",
             animation);
     }
-
 }

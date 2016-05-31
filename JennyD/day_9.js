@@ -1,22 +1,24 @@
 var duration = "12";
 var levelValue = 0;
-var congrat = ["0", "Good job!", "Great job!", "Fantastic Job!", "Marvelous Job!", "Stupendous Job!", "Steve Job!", "Splendiforous Job!", "Odd Job!", "No Job!"];
-var num = 0;
+var congrats = ["Alright job!", "Good job!", "Great job!", "Fantastic Job!", "Marvelous Job!", "Stupendous Job!", "Steve Job!", "Splendiforous Job!", "Odd Job!", "No Job!"];
+var messageNum = 0;
 
 
 var winLevel = function(event)
 {
-    num = num + 1;
     levelValue = levelValue + 1;
-    console.log(levelValue)
     event.srcElement.style.display = "none";
     document.getElementById("message_container").style.display = "block";
-    document.getElementById("congratMessage").innerHTML = congrat[num];
+    document.getElementById("congrat_message").innerHTML = congrats[messageNum];
     document.getElementById("level_number").innerHTML = levelValue;
+    messageNum = messageNum + 1;
+    if (messageNum > congrats.length - 1)
+    {
+        messageNum = 0;
+    }
     setTimeout(newLevel, 2000);
     
 };
-
 
 
 var newLevel = function()
@@ -27,7 +29,6 @@ var newLevel = function()
     ball.style.animation = "bounce " + duration + "s " + "infinite";
     ball.style.display = "block";
 };
-
 
 
 window.onload = function() 
