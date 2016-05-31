@@ -2,16 +2,14 @@
 
 var intMax=function(a, b, c) 
 { 
-	if (a > b && a > c)
+  var largest = a;
+  var intArray = [a, b, c];
+  for (var i = 0; i < intArray.length; i++)
+  {
+    if (intArray[i] > largest)
     {
-      return a;
+      largest = intArray[i];
     }
-	else if (b > a && b > c)
-    {
-      return b;
-    }
-  	else 
-    {
-      return c;
-    }
+  }
+  return largest;
 }

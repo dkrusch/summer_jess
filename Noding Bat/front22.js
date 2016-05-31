@@ -5,5 +5,5 @@
 var front22=function(str) 
 { 
   	var twoChar = str.substring(0, 2);
-	return (twoChar + str + twoChar);
+	return twoChar + str + twoChar;
 }

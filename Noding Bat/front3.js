@@ -4,6 +4,6 @@
 
 var front3=function(str) 
 { 
-	var front = str.substring(0,3);
-  	return (front + front + front);
+	var front = str.substring(0, 3);
+  	return front + front + front;
 }

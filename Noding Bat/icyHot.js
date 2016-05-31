@@ -3,12 +3,10 @@
 
 var icyHot=function(temp1, temp2) 
 { 
-  if ((temp1 < 0 || temp2 < 0) && (temp1 > 100 || temp2 > 100))
+  
+  var checkTemp = function(tempA, tempB)
   {
-    return true;
+    return (tempA < 0 && tempB > 100);
   }
-  else
-  {
-    return false;
-  }
+  return (checkTemp(temp1, temp2) || checkTemp(temp2, temp1));
 }

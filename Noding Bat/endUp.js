@@ -2,19 +2,15 @@
 // If the string has less than 3 chars, uppercase whatever is there. Note that
 // str.toUpperCase() returns the uppercase version of a string.
 
-var endUp=function(str) 
-{ 
-  var threechar = str.substring(str.length - 3, str.length);
-  var firstchar = str.substring(0, str.length - 3);
-  
-  // what this will do
-  if (str.length < 3) 
-  {
-    var twochar = str.toUpperCase();
-    return twochar;
+var endUp = function(str) {
+  // If the string is short, uppercase it all
+  if (str.length < 3) {
+    return str.toUpperCase();
   }
-  else 
-  {
-    return firstchar + threechar.toUpperCase();
-  } 
+  
+  // If string is longer than three characters, uppercase last three
+  var lastThree = str.substring(str.length - 3, str.length);
+  var upToLastThree = str.substring(0, str.length - 3);
+
+  return upToLastThree + lastThree.toUpperCase();
 }

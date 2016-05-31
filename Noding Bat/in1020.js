@@ -6,5 +6,5 @@ var isBetween10And20 =function(value)
 
 var in1020=function(a, b) 
 { 
-	return (isBetween10And20(a) || isBetween10And20(b)) 
+	return (isBetween10And20(a) || isBetween10And20(b));
 }
