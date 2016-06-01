@@ -4,5 +4,5 @@
 
 var monkeyTrouble=function(aSmile, bSmile)
 { 
-	return (aSmile && bSmile || (aSmile || bSmile) != true);
+	return (aSmile === bSmile);
 }
