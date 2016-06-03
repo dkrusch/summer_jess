@@ -4,20 +4,15 @@
 
 var startOz=function(str) 
 { 
-	if (str[0] === "o" && str[1] === "z")
-    {
-      return("oz");
-    }
-  	else if (str[0] !== "o" && str[1] === "z")
-    {
-      return("z");
-    }
-  	else if (str[0] === "o" && str [1] !== "z")
-    {
-      return("o");
-    }
-  	else
-    {
-      return("");
-    }
+  var result = "";
+  if (str[0] === "o")
+  {
+    result = result + str[0];
+  }
+  if (str[1] === "z")
+  {
+    result = result + str[1];
+  }
+  
+  return result;
 }

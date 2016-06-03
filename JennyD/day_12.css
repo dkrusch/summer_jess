@@ -16,8 +16,7 @@ body {
 	padding: 50px 0 50px;
 	margin: 0 auto;
 	font-size: 50px;
-	text-shadow: -1px -1px 0 rgba(0,0,0,0.2),
-				  1px 1px 0 rgba(255,255,255,0.5);	
+	text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2), 1px 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 #shake_message {
@@ -29,53 +28,89 @@ body {
 }
 
 .button {
-	position: absolute;
 	width: 200px;
 	margin: 50px auto;
-	padding: 15px  5px;
+	padding: 15px 5px;
 	font-size: 24px;
 	background-color: #46d11d;
 	cursor: pointer;
 	border-radius: 5px;
-	bottom: 50px;
-	left: 570px;
 	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
 	letter-spacing: 2px;
 	color: #1d113b;
 }
 
 .dice {
-    	position: relative;
-	display: inline-block;
-	height: 200px;
-	width: 200px;
 	margin: 50px 20px;
 	border-radius: 5px;
-
 }
 
 .dice_pic {
-	position: absolute;
+	display: inline-block;
 	height: 200px;
 	width: 200px;
 	margin: 9px;
 	background-repeat: no-repeat;
+	background-position: center;
 }
 
 #dice_1 {
-    background-image: url("images/masago.png");
-    left: -100px;
-    bottom: 25px;
+	background-image: url("images/masago.png");
 }
 
 #dice_2 {
-    background-image: url("images/sake.png");
-    left: 100px;
-    bottom: 25px;
+	background-image: url("images/sake.png");
+}
+
+.image_1 {
+	background-image: url(images/masago.png");
+} 
+
+.image_2 {
+	background-image: url("images/sake.png");
+} 
+
+.image_3 {
+	background-image: url("images/rolls.png");;
+}
+
+.image_4 {
+	background-image: url("images/pinkfish.png");;
+}
+
+.image_5 {
+	background-image: url("images/whitefish.png");;
+}
+
+.image_6 {
+	background-image: url("images/fancy_roll.png");;
 }
 
 @keyframes shake {
-	0%, 100% {transform: translateX(0);} 
-	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {transform: translateX(5px);} 
-	10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {transform: translateX(-5px);} 
+	0%, 100% {
+		transform: translateX(0);
+	}
+	5%,
+	15%,
+	25%,
+	35%,
+	45%,
+	55%,
+	65%,
+	75%,
+	85%,
+	95% {
+		transform: translateX(5px);
+	}
+	10%,
+	20%,
+	30%,
+	40%,
+	50%,
+	60%,
+	70%,
+	80%,
+	90% {
+		transform: translateX(-5px);
+	}
 }
