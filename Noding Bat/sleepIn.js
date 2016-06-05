@@ -7,9 +7,9 @@ var sleepIn = function(weekday, vacation)
 
 	if (vacation === true)
     {
-      return false;
+      return true;
     }
-  	else if (weekday === vacation === false)
+  	else if (weekday === vacation)
     {
       return true;
     }
