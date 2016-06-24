@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+}
+.spot {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    box-shadow: 0 0 5px rgba(255,255,255,0.8);
+    -webkit-animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+     0%, 100% {-webkit-transform: scale(1);}
+     25%, 75% {-webkit-transform: scale(1.08);}
+     50% {-webkit-transform: scale(0.92);}
+}

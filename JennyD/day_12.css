@@ -54,16 +54,8 @@ body {
 	background-position: center;
 }
 
-#dice_1 {
-	background-image: url("images/masago.png");
-}
-
-#dice_2 {
-	background-image: url("images/sake.png");
-}
-
 .image_1 {
-	background-image: url(images/masago.png");
+	background-image: url("images/masago.png");
 } 
 
 .image_2 {

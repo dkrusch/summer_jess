@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Party</title>
+        <link rel="stylesheet" type="text/css" href="day_17.css">
+    </head>
+    <body>
+        <div id="main">
+            <h1>Party Time!</h1>
+            <h2>Enter a date and time to see stuff.</h2>
+            <form>
+                <div class="input">
+                    Birthdate:
+                    <input type="date" name="bday" id="date">
+                </div>
+                <div class="input">
+                    Time:
+                    <input type="time" name="usr_time" id="time">
+                    <input type="submit" id="button" value="Party?">
+                </div>
+                <ul>
+                    <li>Your birthday is <span id="birthdate"></span></li>
+                    <li>You're <span id="yearsAlive"></span> years old</li>
+                    <li>You're <span id="daysAlive"></span> days old</li>
+                    <li>You're <span id="minsAlive"></span> minutes old</li>
+                </ul>
+                <ul>
+                    <li>Your 10,000th day is <span id="tenThousandthDay"></span></li>
+                    <li>Your 20,000th day is <span id="twetyThousandthDay"></span></li>
+                    <li>Your 500,000th hour is <span id="fiveHundredThousandthHour"></span></li>
+                    <li>Your one millionth minute is <span id="millionthMin"></span></li>
+                    <li>Your ten millionth minute is <span id="tenMillionthMin"></span></li>
+                    <li>Your fifty millionth minute is <span id="fityMillionthMin"></span></li>
+
+                </ul>
+            </form>
+	    </div>
+    </body>
+    <script src="//code.jquery.com/jquery-2.2.4.js"></script>
+<script src="day_17.js"></script>
+</html>

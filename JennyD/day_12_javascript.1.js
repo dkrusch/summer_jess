@@ -1,4 +1,3 @@
-var sushiNumber = "";
 var diceNumber = document.getElementById("dice_number");
 var shakeMessage = document.getElementById("shake_message");
 var rolledSushi = function(elementId)
@@ -21,7 +20,7 @@ var newSushi = function(event)
 {
     var sushiIndexOne = rolledSushi("dice_1");
     var sushiIndexTwo = rolledSushi("dice_2");
-    sushiNumber = sushiIndexOne + sushiIndexTwo;
+    var sushiNumber = sushiIndexOne + sushiIndexTwo;
     
     diceNumber.style.display = "block";
     shakeMessage.style.display = "none";

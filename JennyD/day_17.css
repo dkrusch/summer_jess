@@ -1,0 +1,8 @@
+/* Center the text */
+body {text-align: center;}
+
+/* Display in the inline block */
+.input { display: inline-block;}
+
+/* Remove the bullet style off the li */
+li {list-style-type: none; }
