@@ -11,6 +11,8 @@ Math.degrees = function(radians)
   return radians * 180 / Math.PI;
 };
 
+var gmarkers = [];
+
 // Once everything on the page loads call the function
 $( document ).ready(function()
 {
@@ -18,11 +20,22 @@ $( document ).ready(function()
     $("#locationInputs").on("submit", calculateLocation);
 });
 
+var removeMarkers = function()
+{
+    for(var i = 0; i < gmarkers.length; i++)
+    {
+        gmarkers[i].setMap(null);
+    }
+    gmarkers = [];
+}
+
 // Takes latitude and longitude values from the inputs and finds the middle point between all of them. 
 var calculateLocation = function(event)
 {
     // Stops hitting submit from refreshing the page
     event.preventDefault();
+    
+    removeMarkers();
     
     // Calls parseInputs
     var personLocations = parseInputs();
@@ -54,8 +67,18 @@ var calculateLocation = function(event)
     var hyp = Math.sqrt(x * x + y * y);
     // Returns the arc tangent of z / hyp in degrees
     var lat = Math.degrees(Math.atan2(z, hyp));
-    console.log(lat);
-    console.log(lng);
+    var centerLatLng = {lat: lat, lng: lng};
+    map.setCenter(centerLatLng)
+    var marker = new google.maps.Marker(
+    {
+        position: centerLatLng,
+        map: map,
+        title: 'Marker'
+        
+    });
+    gmarkers.push(marker);
+    marker.setIcon("http://maps.google.com/mapfiles/ms/icons/blue-dot.png")
+
 }
 
 // Pushes objects containing lat and lng into an array
@@ -67,13 +90,11 @@ var parseInputs = function()
     // Pushes the result of the inputs into objects
     $(".person").each(function(index, element) 
     {
-        console.log(element);
-        console.log($(element));
         
         // Creates a variable and turns the text input result into a number
         var inputLat = parseFloat($(element).find("input[name=latitude]").val());
         var inputLng = parseFloat($(element).find("input[name=longitude]").val());
-        
+
         // Checks if the result is a number 
         if (Number.isNaN(inputLat) || Number.isNaN(inputLng))
         {
@@ -81,11 +102,31 @@ var parseInputs = function()
         }
         else 
         {
+            console.log("else")
             // Converts the text from input into radians
             personLocations.push({lat: Math.radians(inputLat), lng: Math.radians(inputLng)});
+            var myLatLng = {lat: inputLat, lng: inputLng};
+            console.log(myLatLng);
+            var marker = new google.maps.Marker(
+            {
+                position: myLatLng,
+                map: map,
+                title: 'Marker'
+            });
+            gmarkers.push(marker);
         }
     })
     return personLocations;
+}
+
+var map;
+function initMap() 
+{
+    map = new google.maps.Map(document.getElementById('map'), 
+    {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8
+    });
 }
 
 
